@@ -18,6 +18,10 @@ const useStyles = makeStyles({
   table: {
     minWidth: 650,
   },
+  input: {
+    marginLeft: 10,
+    marginRight: 10,
+  },
 });
 
 const Patients = (props) => {
@@ -45,12 +49,12 @@ const Patients = (props) => {
     <Grid container direction="column" justify="center" alignItems="center">
       <Grid item>
         <TextField
-          id="standard-basic"
+          className={classes.input}
           label="Event code"
           onChange={(e) => setEventCode(e.target.value)}
         />
         <TextField
-          id="standard-basic"
+          className={classes.input}
           label="Code category"
           onChange={(e) => setCodeCategory(e.target.value)}
         />
